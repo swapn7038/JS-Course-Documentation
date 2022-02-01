@@ -218,6 +218,69 @@ const age2 = calcAge2(2003);
 
 console.log(age1, age2);
 */
+/* 
 ////////////////////////////////////////////////////////////////////////////////////////////
 // Lec No : 35
-// Arrow functions : Added in ES6 : Shorter ffrom of function
+// Arrow functions : Added in ES6 : Shorter form of function
+// Shorter form of function, faster to write
+
+// function Expression 
+const calcAge2 = function(birthYear) {
+    return 2022 - birthYear;
+}
+
+// Arrow function 
+// birthYear => 2037 - birthYear; //To store it 
+const calcAge3 = birthYear => 2037 - birthYear;
+// Here we store the fnuction expression in variable known as calcAge3 
+// One liner function
+const age3 = calcAge3(1991);
+console.log(age3);
+// The value we claculated give output without writing return value
+// We dont need parenthesis here, we just write one line of code Here
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    // return retirement
+    return '${firstName} return is ${retirement} years';
+}
+
+console.log(yearsUntilRetirement(1991, 'Swapnil'));
+console.log(yearsUntilRetirement(1990, 'Ajay'));
+
+// Using arrow function is easy but get complicated later 
+// You need to learn step by step, if anyone tells you everything at the same time you will get overwelmehed 
+*/ //
+
+////////////////////////////////////////////////////////////////////////////////////////////
+/*
+// Lec No : 36 
+// Function calling other functions
+// We do many times in JS thats why it is so important, Beginners struggle with this a lot 
+
+function cutFruitPieces(fruit) {
+    return fruit = 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${orangePieces} piece of apples and ${orangePieces} piece of oranges`;
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3));
+
+// Calling a function inside a function : DatafLow
+
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// Lecture No: 37 - Reviewing Functions Everything we learn Until 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+// Section 8 : How JS works behind the screen
