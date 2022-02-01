@@ -283,6 +283,9 @@ console.log(fruitProcessor(2, 3));
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 // Section 8 : How JS works behind the screen
 // Lec Number : 87 -Section intro
 // Lec No : 88 - Section Intro 
@@ -326,3 +329,28 @@ console.log(fruitProcessor(2, 3));
 //  Just-in-time (JIT) compilation Followed by Js
 // Parsing :AST => Compilation => Execution(Happens in CALL STACK) => Optimization
 // The Bigger Picture: JS Runtime |
+
+// WEB APIs : DOM, Timers, Fetch API ...
+// Callback Queue : click, timer, data
+// Call back function from DOM event lidtener 
+// Thread Pool 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// Lec No : 91 => Execution context and the call stack 
+// After compilation  of the code => Creation of global execution context (for top-level code) -> Not inside a
+// function => Executoin of top level code (inside global EC) => Execution of 
+// functions and waiting for callbacks to be executed
+// Whats inside execution context => 1. Variable Environment --> let, var, const declaration : --> Functions --> arguments object
+// 2. Scope chain 
+// 3. this keyword 
+// => Generally during "creation phase", right before execution 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// Lec No : 92 Scope (scoping) and Scope Chain
+// Scoping : How our program's variables are organised and accessed  by the JS engine. Scoping asks the question "Where do variables live?" or 
+// "Where can we access a certain variables, and where not?". 
+// Lexical Scoping : Scoping is controlled by placement of functions and blocks in the code;
+// Scope: Space or environemt in ehich a certain variable is declared (variable environment in case of function).
+// This is global Scope, function scope, and block scope. 
+//
