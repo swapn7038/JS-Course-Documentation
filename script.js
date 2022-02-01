@@ -282,7 +282,7 @@ console.log(fruitProcessor(2, 3));
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 // Section 8 : How JS works behind the screen
 // Lec Number : 87 -Section intro
 // Lec No : 88 - Section Intro 
@@ -305,4 +305,24 @@ console.log(fruitProcessor(2, 3));
 // Many languages are only Object oriented or Functional, but Js is so flexible that it has all that features that
 // 
 // First-classs functions : Functions are simply treated as variables. We can pass them into other functions, and return them from functions. 
-//
+// JS is Dynaimically-typed language => No data type definitoin. Types become known at euntime / Datatyped variable is automatically changed
+// Single-threaded programming : This two are most complicated topics 
+// Non-blocking event loop : and this one also / JS runs in one simgle threrad, so it can do only one thing at a time
+// So what about a long-running task ? : Sounds like it would block the single thread. However, we want non-blocking behaviour!
+// How do we achieve that : By event loop
+// Event loop : By using an Event loop : takes long running tasks, execute them in the "background", and puts them back in the main thread once they are finished  
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// Lec No : 90 - The JS engine and Runtimes 
+// What is JS engine : Program that Executes JS code Ex: Google, Node.js, V8 Engine  
+// Its easy to understand JS engine, but complicated to understand it components 
+// Any JS engine conatains CALL STACK and HEAP
+// CALL STACK is the place where all the code actually executes, using something called Ecectution Context 
+// HEAP is unstrucctured pool, where objects are stored 
+// Computer Science Sidenote: Compilation vs Interpretation
+// Compilation : Entire code is converted into machine code at once, and written to a binary file that can be executed by a computer
+// Interpretation : Interpreter runs through the source code and execute it line by line 
+// Just-in-time (JIT) compilation: Entire code is converted into machine code at once, then executed immediately.
+//  Just-in-time (JIT) compilation Followed by Js
+// Parsing :AST => Compilation => Execution(Happens in CALL STACK) => Optimization
+// The Bigger Picture: JS Runtime |
