@@ -288,4 +288,21 @@ console.log(fruitProcessor(2, 3));
 // Lec No : 88 - Section Intro 
 // Lec No : An High Level Overview of JAvaScript 
 // JS is a High Level, OOP, Multi_paradigm Programming Language
-// ❤🤷‍♂️😊😍😂🤣😒👌🤷‍♀️🤦‍♂️🤦‍♂️🤦‍♀️🙌👍😁💕😘🐱‍🏍🐱‍👤🤳🎂🎉💋💋😁
+// ❤
+// 😁High-Level : Any computer program neeeds resources : Memory 
+// Low-Level : C - Where we have to manually manage resources 
+// But in High level languages we dont have to  manually manage resources 
+// Downside is program in Python and JS (which are high level languages), progrms are never to be that fast 
+// 😄Garbage Collectio : JS removes objects in memory which are of not any use . Its lile JS have a cleaning guy, we dont have to work on this by ourselves
+// 😀Interpreted or just-in-time compiled : We write code in JS but to understand to computer we need to convert it into machine language in the 0s and 1s form
+// and that process is known as compilation or and the software does that is known as Compiler
+// But in JS this process happens in JS engine Thats why we called it as interpreted or just-in-time compiler
+// 😉Multi-paradigm : An approach and mindset of set structuring code, which will direct your coding style and technique
+// Three Popular Paradigm are 
+// 1. Precedural Programming
+// 2. Object-oriented Programming(OOP) :Prototype based object oriented approach 
+// 3. Functional Programming(FP) 
+// Many languages are only Object oriented or Functional, but Js is so flexible that it has all that features that
+// 
+// First-classs functions : Functions are simply treated as variables. We can pass them into other functions, and return them from functions. 
+//
