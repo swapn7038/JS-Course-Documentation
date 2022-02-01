@@ -1,3 +1,22 @@
+// First fix your path, from where are you going to learn stuff. Currently I am on Udemy JS course, some YouTube
+// Channels. Write down every fucking thing, whatever you are learning, by just watching tutorial you are not going to learn anything.
+// Write down or comment all the stuff like : From which youtube video did you watch which concept, date,day and time also. It will help you to analyse you
+// to analyse your progress 
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// If you want to learn web dev just learn HTML, CSS and JavaScript. That is more than enough for you.
+// Try to find your path 
+// I have wasted a lot of time allready, now its time to organise yourself to a path, strategically and start learn from zero or more
+// Start building out stuff, by googling stuff, after you learn basic, thats how you will learn things 
+////////////////////////////////////////////////////////////////////////////////////////////////
+// Some tips from Dev Ed : Youtube Channel 
+// 1. Watch entire tutorial on Youtube
+// 2. Code along with tutorial 
+// 3. Comment every process of the code step by step on another file 
+// 4. Recall doing the same tutorial and if you forget something see your own notes
+// 5. Then with the knowledge do your personal projects
+// 
+
 // let js = 'amazing';
 // if (js === 'amazing') alert('JS is fun');
 // 50 + 50;
