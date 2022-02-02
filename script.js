@@ -3,6 +3,7 @@
 // Write down or comment all the stuff like : From which youtube video did you watch which concept, date,day and time also. It will help you to analyse you
 // to analyse your progress 
 ////////////////////////////////////////////////////////////////////////////////////////////////
+//  You dont need to watch lot of videos, just two or three, just take notes of everything, every fucking thing you listen or read note down here. Revise it again and again. 
 
 // If you want to learn web dev just learn HTML, CSS and JavaScript. That is more than enough for you.
 // Try to find your path 
@@ -354,13 +355,32 @@ console.log(fruitProcessor(2, 3));
 // Scope: Space or environemt in ehich a certain variable is declared (variable environment in case of function).
 // This is global Scope, function scope, and block scope.
 
+// Time 14:30 PM // 2/2/2022 | Udemy 
+
+// Scope of variable : Region of our code where a cetain variables can be accessed. 
+//  3 Types of Scopes : 1. Global 2. Function 3. Block Scope(ES6) 
+// Scope is the place in our code, where Variables are declared, same thing for functions as well, because Functions are also the values stored in variables 
+// 1. Global Scope : Variables declare outside of any function or block, this variables will be accessed in all our programm (everywhere) and in functions as well
+// 2. Function Scope : Variables are accessible only inside function. NOT outside. Also called local scope. 
+/*
+function calcAge(birthYear) {
+    const now = 2037;  // Here now is Function Scope 
+    const age = now - birthYear;
+    return age;
+}
+console.log(now); // Reference Error 
+*/
+
+// 3. Block Scope(ES6) : What does mean by Block : Everything inside the curely braces. Variables declare inside the block are only accessible inside the block(Block scope). However, this only applies to let and const variables! Functoin ar ealso block scoped (only in Scrict mode).  
+// Here Continues ::::::::::::::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 // Time : 10:42 AM 2/2/2022 
-//  Youtube : Namaste JavaScript // map, filter & reduce Functionns : Which are higjer order functions 
+//  Youtube : Namaste JavaScript // map, filter & reduce Functionns : Which are higher order functions 
 //  map function : Use to transform an array / Suppose we have an arrray here const arr = [5, 1, 3, 2, 6];
 //    const arr = [5, 1, 3, 2, 6];
 // now we want to transform it // Means suppose we want to double or tripple the value // or convert it into binary 
