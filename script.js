@@ -352,5 +352,115 @@ console.log(fruitProcessor(2, 3));
 // "Where can we access a certain variables, and where not?". 
 // Lexical Scoping : Scoping is controlled by placement of functions and blocks in the code;
 // Scope: Space or environemt in ehich a certain variable is declared (variable environment in case of function).
-// This is global Scope, function scope, and block scope. 
-//
+// This is global Scope, function scope, and block scope.
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// Time : 10:42 AM 2/2/2022 
+//  Youtube : Namaste JavaScript // map, filter & reduce Functionns : Which are higjer order functions 
+//  map function : Use to transform an array / Suppose we have an arrray here const arr = [5, 1, 3, 2, 6];
+//    const arr = [5, 1, 3, 2, 6];
+// now we want to transform it // Means suppose we want to double or tripple the value // or convert it into binary 
+// here we use map function
+
+///////////////////////////////////////////
+// function double(x) {
+//     return x * 2;
+// }
+
+// function tripple(x) {
+//     return x * 3;
+// }
+
+// function binary(x) {
+//     return x.toString(2);
+// }
+
+// const output = arr.map(binary); // We pass here double, thats why double  should be a function 
+// console.log(output);
+////////////////////////////////////////////////////////
+
+
+// Now we want to triple the values // First create the function triple
+// function tripple(x) {
+//     return x * 3;
+//                               }
+
+
+//  For to convert binary 
+// function binary(x){
+//     return x.toString(2);
+//                              }
+
+
+// We can also write our code like this 
+
+// const output = arr.map(function binary(x) {
+//     return x.toString(2);
+// });
+// console.log(output);  // this syntax is totallly fine /// This is known as Highe rorder functions 
+/////////////////////////////////////////////////////////////////////////////
+//  Filter function 
+// const arr = [5, 1, 3, 2, 6];
+// filter odd values 
+//  This code is for finding odd values 
+// function isOdd(x) {
+//     return x % 2;
+// }
+
+// const output = arr.filter(isOdd);
+// console.log(output);
+
+//  Output is : (3) [5, 1, 3] 
+
+//  Code for finding even numbers 
+//  Now to find even values change the logic in function 
+
+// const arr = [5, 1, 3, 2, 6];
+
+// function isEven(x) {
+//     return x % 2 === 0;
+// }
+
+// const output = arr.filter(isEven);
+// console.log(output);
+
+
+////////////////////////////////////// Write this by myself //////////////////////////////////////
+// const arr = [2, 4, 5, 7, 8, 10, 500, 60, 67]
+
+// function isEven(x) {
+//     return x % 2 === 0; 
+// }
+
+// const output = arr.filter(isEven)
+// console.log(output)
+
+// output is (6) [2, 4, 8, 10, 500, 60]
+
+////////////////////////////////////// Suppose we wanto filter out values great than 2 then //////////////////////////////////////
+//  write function like // function greaterThan2 (x){
+//     return x > 4;
+// }
+
+// const arr = [2, 4, 5, 7, 8, 10, 500, 60, 67]
+
+// function greaterThan2(x) {
+//     return x > 2;
+// }
+
+// const output = arr.filter(greaterThan2)
+// console.log(output)
+
+/////////Output is : [4, 5, 7, 8, 10, 500, 60, 67]
+//  We can also write this function with the help of array function  
+///////////////////////// ARROW FUNCTION /////////////////////////
+// const arr = [2, 4, 5, 7, 8, 10, 500, 60, 67];
+// const output = arr.filter((x) => x > 2);
+
+// console.log(output);
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////// reduce function /////////////////////////////
