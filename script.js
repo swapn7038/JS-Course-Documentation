@@ -484,3 +484,39 @@ console.log(now); // Reference Error
 // console.log(output);
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////// reduce function /////////////////////////////
+// Time : 11:45 AM Date: 3/2/2022 // Youtube : Namaste Javascript 
+const arr = [5, 1, 3, 2, 6];
+// sum or max
+function findSum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) { // we can write this whole code with the help of reduce function 
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+
+console.log(findSum(arr));
+///////////////////////////////////////////////////////////////////////////////
+const output = arr.reduce(function(acc, curr) {
+    acc = acc + curr;
+    return acc;
+}, 0);
+
+console.log(output);
+
+// Lec No : 93 // Scoping in Practice 
+/*
+'use strict';
+
+function calcAge(birthYear) {
+    const age = 2037 - birthYear;
+    console.log(firstName);
+    return age;
+}
+
+const firstName = 'Jonas';
+calcAge(1991);
+*/
+
+// Remaining : Watch lec no 83 again 
+// Lec No : 96 // The this keyword
