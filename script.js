@@ -3,7 +3,9 @@
 // Write down or comment all the stuff like : From which youtube video did you watch which concept, date,day and time also. It will help you to analyse you
 // to analyse your progress 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-//  You dont need to watch lot of videos, just two or three, just take notes of everything, every fucking thing you listen or read note down here. Revise it again and again. 
+// Be patient and you will learn things 
+// GRIT : Interest + Passion 
+//  You dont need to watch lot of videos, just two or three, just take notes of everything, every thing you listen or read note down here. Revise it again and again. 
 
 // If you want to learn web dev just learn HTML, CSS and JavaScript. That is more than enough for you.
 // Try to find your path 
@@ -16,7 +18,101 @@
 // 3. Comment every process of the code step by step on another file 
 // 4. Recall doing the same tutorial and if you forget something see your own notes
 // 5. Then with the knowledge do your personal projects
-// 
+// ////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+// Technical thapa : Javascript😎😋
+// Lec Starts at : 24:40 ( values and variables in js )
+
+// var myName = "Swapnil";
+// console.log(myName);
+
+// var => key
+// myName => Variable name 
+// "Swapnil" => value of variable
+
+// Naming variables : Rules and best practices 
+// 1. The first character must be a letter or an underscore (...)
+//  or an dollar sign ($). You cant use a number as the first character
+// 2. The rest of the variables can include any letter, any number, or the underscore. Can`t use 
+// any other characters, including spaces. 
+// 3. Variables names are case sentitive 
+//  4. No limit to variables name 
+//  5. Cant use reserved keywords eg: var, const, let, function, 
+
+// 1) 😭Challlenge time 
+// var _myName = "swapnil"
+// var _1myName = "Random"
+// var 1myName = "Random2"
+// var $myName ="Random3"
+// only 3rd one will show error 
+
+// DATA TYPES AND VARIABLES // Time Stamps : 38:45
+// Six Data Types that are primitive, 
+// 1. undefined : typeof instance ==="undefined"
+// 2. Boolean : typeof instance === "boolean"
+// 3. Number : typeof instance === "number"
+// 4. String : typeof instance === "string"
+// 5. Bigint : typeof instance ==="bigint"
+// 6. Symbol : typeof instance === "symbol"
+
+// var myName = "DITMS"
+// console.log(typeof(myName));
+
+// typeof operator 
+
+// var myAge = 20;
+// console.log(myAge);
+// console.log(typeof(myAge));
+
+// var iAmSwapnil = true;
+// console.log(iAmSwapnil);
+// console.log(typeof(iAmSwapnil));
+
+// 🤑 2. Challenge time 
+// Data practices 
+
+// console.log(10 + "20");
+// Output : 1020 number + String
+
+// console.log(9 - "5");
+// Here we will get output 4 // Bug 
+
+// console.log("Java " + "Script");
+// Output : JavaScript
+
+// console.log(" " + " ");
+// Output : 
+
+// console.log(" " + 0);
+// Output : 0 
+
+// console.log("Swapnil" - "Shelke");
+// Output : NaN  (not a number )
+
+// console.log(true + true);
+// Output : 2 Because in JS true is considered as one 
+
+// console.log(true + false);
+// Output : 1
+
+// console.log(false - true);
+// Output : -1 
+
+// console.log(false + true);
+// Output : 1 
+
+// INTERVIEW QIESTION 
+// 1. Difference between null vs undefined 
+
+// var iAmUseLess = null;
+// console.log(iAmUseLess);
+// Output : null 
+
+// Time Stamp : 59:15 
+
+// To run js file type node script.js in terminal 
+///////////////////////////////////////////////////////////////////////////////
 
 // let js = 'amazing';
 // if (js === 'amazing') alert('JS is fun');
@@ -34,169 +130,7 @@
 // let javascriptIsFun = true;
 // console.log(javascriptIsFun);
 ////////////////////////////////////////////////////////////////////////////////////////////////
-//Operator Precendence
-// const now = 2037;
-// const ageJonas = 2021 - 1991;
-// const ageSarah = 2021 - 2018;
 
-// console.log(now - 1991 > now - 2018);
-
-
-// let x, y;
-// x = y = 25 - 10 - 5;
-// console.log(x, y);
-
-
-
-// const averageAge = ageJonas + ageSarah / 2;
-// console.log(ageJonas, ageSarah, averageAge);
-
-
-////////////////////////////////////////////////////////////////
-
-// coding challenge  1 
-
-// const massMark = 78;
-// const heightMark = 1.69;
-// const massJohn = 92;
-// const heightJohn = 1.95;
-
-// const BMIMark = massMark / heightMark ** 2;
-// const BMIJohn = massJohn / (heightJohn * heightJohn);
-// const markHigherBMI = BMIMark > heightJohn;
-// console.log(BMIMark, BMIJohn, markHigherBMI);
-
-
-
-////////////////////////////////////////////////////////////////
-// strings and Template Literals
-// const firstName = 'Jonas';
-// const job = 'teacher';
-// const birthYear = 1991;
-// const year = 2037;
-
-// // // const jonas = "I'm " + firstName + ' a ' + (year - birthYear) + job + '!';
-// // // console.log(jonas);
-
-// // const jonasNew = 'I`m ${firstName}, a ${year-birthYear}';
-// // console.log(jonasNew);
-
-
-// ////////////////////////////////////////////////
-// // If/Else statements 
-// const age = 15;
-// const insOldEnough = age >= 17;
-
-// if (age >= 18) {
-//     console.log('Sarah can start driving licencing ');
-// } else {
-//     const yearsLeft = 18 - age;
-//     console.log('Sarah is too young / wait another $ {yearsLeft} years ');
-// }
-
-// const birthYear = 2012;
-// let century;
-// if (birthYear <= 2000) {
-//     century = 20;
-// } else {
-//     century = 21;
-// }
-// console.log(century);
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////
-// Coding Challenge // 2 -
-
-// const massMark = 78;
-// const heightMark = 1.69;
-// const massJohn = 92;
-// const heightJohn = 1.95;
-
-// const BMIMark = massMark / heightMark ** 2;
-// const BMIJohn = massJohn / (heightJohn * heightJohn);
-// const markHigherBMI = BMIMark > heightJohn;
-// console.log(BMIMark, BMIJohn, markHigherBMI);
-// console.log(BMIMark, BMIJohn);
-
-
-
-// if (BMIMark > BMIJohn) {
-//     console.log("Marks BMI is higher than John`s");
-// } else {
-//     console.log("Johns BMI is higher than John`s");
-// }
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////
-// 20. Type Conversion and Coercion
-// const inputYear = '1991';
-// console.log(Number(inputYear));
-// console.log(inputYear + 18);
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////
-// Section: 3 Lec No : 32
-// Activeate Strict Mode
-// 'use strict';
-
-
-// let hasDriversLiscence = false;
-// const passTest = true;
-
-// if (passTest) hasDriversLiscence = true;
-// if (hasDriversLiscence) console.log('I can Dirve :D');
-
-// const interface = 'Audio';
-// const private = 543;   Some words are reserved so we cannot use them here
-// const if = 23; 
-
-
-// Always use strict mode in your code
-
-/*
-////////////////////////////////////////////////////////////////////////////////////////////
-// Lec No : 33
-// fundamental building block of javascript is functions 
-// Function : piece of code we can use over and over again
-// finction is Keyword
-
-function logger() {
-    // all the code within this block is called as function buddy
-    console.log('My name  is Swapnil');
-    //  If we want this cod emultiple times in our code then we use function 
-}
-
-// calling / running / invoking 
-logger();
-logger();
-logger();
-logger();
-// we can use this as many time we want
-
-// funcrions can do lot more than reusig 
-function fruitProcessor(apples, oranges) {
-    // Choose descriptive function names
-    console.log(apples, oranges);
-    //    Apple and oranges are parameters / using as just normal variables 
-    const juice = 'Juice with ${apples} apples and ${oranges}';
-    return juice;
-}
-
-
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
-
-
-////////////////////////////////////////////////////////////////////////////////////////////
-conlose.log() is also an build in function 
-*/
-
-
-////////////////////////////////////////////////////////////////////////////////////////////
-// DRY : dont repeate yourself : functions 
-////////////////////////////////////////////////////////////////////////////////////////////
 
 /*// Lec : 34
 // Function declaration and Expression 
@@ -221,11 +155,11 @@ console.log(age1, age2);
 */
 /* 
 ////////////////////////////////////////////////////////////////////////////////////////////
-// Lec No : 35
-// Arrow functions : Added in ES6 : Shorter form of function
-// Shorter form of function, faster to write
+Lec No : 35
+Arrow functions : Added in ES6 : Shorter form of function
+Shorter form of function, faster to write
 
-// function Expression 
+ function Expression 
 const calcAge2 = function(birthYear) {
     return 2022 - birthYear;
 }
@@ -237,27 +171,30 @@ const calcAge3 = birthYear => 2037 - birthYear;
 // One liner function
 const age3 = calcAge3(1991);
 console.log(age3);
-// The value we claculated give output without writing return value
-// We dont need parenthesis here, we just write one line of code Here
+
+The value we claculated give output without writing return value
+We dont need parenthesis here, we just write one line of code Here
+
 const yearsUntilRetirement = (birthYear, firstName) => {
     const age = 2037 - birthYear;
     const retirement = 65 - age;
-    // return retirement
+return retirement
     return '${firstName} return is ${retirement} years';
 }
 
 console.log(yearsUntilRetirement(1991, 'Swapnil'));
 console.log(yearsUntilRetirement(1990, 'Ajay'));
 
-// Using arrow function is easy but get complicated later 
-// You need to learn step by step, if anyone tells you everything at the same time you will get overwelmehed 
+Using arrow function is easy but get complicated later 
+You need to learn step by step, if anyone tells you everything at the same time you will get overwelmehed 
 */ //
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 /*
-// Lec No : 36 
-// Function calling other functions
-// We do many times in JS thats why it is so important, Beginners struggle with this a lot 
+
+Lec No : 36 
+ Function calling other functions
+ We do many times in JS thats why it is so important, Beginners struggle with this a lot 
 
 function cutFruitPieces(fruit) {
     return fruit = 4;
@@ -273,7 +210,7 @@ function fruitProcessor(apples, oranges) {
 
 console.log(fruitProcessor(2, 3));
 
-// Calling a function inside a function : DatafLow
+Calling a function inside a function : DatafLow
 
 */
 
@@ -423,7 +360,7 @@ console.log(now); // Reference Error
 // });
 // console.log(output);  // this syntax is totallly fine /// This is known as Highe rorder functions 
 /////////////////////////////////////////////////////////////////////////////
-//  Filter function 
+//  Filter function //
 // const arr = [5, 1, 3, 2, 6];
 // filter odd values 
 //  This code is for finding odd values 
@@ -461,7 +398,7 @@ console.log(now); // Reference Error
 
 // output is (6) [2, 4, 8, 10, 500, 60]
 
-////////////////////////////////////// Suppose we wanto filter out values great than 2 then //////////////////////////////////////
+// Suppose we wanto filter out values great than 2 then 
 //  write function like // function greaterThan2 (x){
 //     return x > 4;
 // }
@@ -475,18 +412,22 @@ console.log(now); // Reference Error
 // const output = arr.filter(greaterThan2)
 // console.log(output)
 
-/////////Output is : [4, 5, 7, 8, 10, 500, 60, 67]
+// Output is : [4, 5, 7, 8, 10, 500, 60, 67]
 //  We can also write this function with the help of array function  
-///////////////////////// ARROW FUNCTION /////////////////////////
+//ARROW FUNCTION 
 // const arr = [2, 4, 5, 7, 8, 10, 500, 60, 67];
 // const output = arr.filter((x) => x > 2);
 
 // console.log(output);
-////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////// reduce function /////////////////////////////
+
+
+// reduce function 
 // Time : 11:45 AM Date: 3/2/2022 // Youtube : Namaste Javascript 
+
+/*
+
 const arr = [5, 1, 3, 2, 6];
-// sum or max
+sum or max
 function findSum(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) { // we can write this whole code with the help of reduce function 
@@ -496,7 +437,7 @@ function findSum(arr) {
 }
 
 console.log(findSum(arr));
-///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 const output = arr.reduce(function(acc, curr) {
     acc = acc + curr;
     return acc;
@@ -504,19 +445,4 @@ const output = arr.reduce(function(acc, curr) {
 
 console.log(output);
 
-// Lec No : 93 // Scoping in Practice 
-/*
-'use strict';
-
-function calcAge(birthYear) {
-    const age = 2037 - birthYear;
-    console.log(firstName);
-    return age;
-}
-
-const firstName = 'Jonas';
-calcAge(1991);
 */
-
-// Remaining : Watch lec no 83 again 
-// Lec No : 96 // The this keyword
