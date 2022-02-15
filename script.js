@@ -1,5 +1,5 @@
 // First fix your path, from where are you going to learn stuff. Currently I am on Udemy JS course, some YouTube
-// Channels. Write down every fucking thing, whatever you are learning, by just watching tutorial you are not going to learn anything.
+// Channels. Write down every thing, whatever you are learning, by just watching tutorial you are not going to learn anything.
 // Write down or comment all the stuff like : From which youtube video did you watch which concept, date,day and time also. It will help you to analyse you
 // to analyse your progress 
 ////////////////////////////////////////////////////////////////////////////////////////////////
