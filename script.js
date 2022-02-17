@@ -1,5 +1,5 @@
 // First fix your path, from where are you going to learn stuff. Currently I am on Udemy JS course, some YouTube
-// Channels. Write down every fucking thing, whatever you are learning, by just watching tutorial you are not going to learn anything.
+// Channels. Write down every thing, whatever you are learning, by just watching tutorial you are not going to learn anything.
 // Write down or comment all the stuff like : From which youtube video did you watch which concept, date,day and time also. It will help you to analyse you
 // to analyse your progress 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21,7 +21,7 @@
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
-// Technical thapa : Javascript😎😋
+//  * Technical thapa : Javascript😎😋
 // Lec Starts at : 24:40 ( values and variables in js )
 
 // var myName = "Swapnil";
@@ -47,7 +47,7 @@
 // var $myName ="Random3"
 // only 3rd one will show error 
 
-// DATA TYPES AND VARIABLES // Time Stamps : 38:45
+// *  DATA TYPES AND VARIABLES // Time Stamps : 38:45
 // Six Data Types that are primitive, 
 // 1. undefined : typeof instance ==="undefined"
 // 2. Boolean : typeof instance === "boolean"
@@ -107,9 +107,260 @@
 
 // var iAmUseLess = null;
 // console.log(iAmUseLess);
-// Output : null 
+// console.log(typeof(iAmUseLess));
 
-// Time Stamp : 59:15 
+// Output : null 
+// Output : undefined 
+
+// 2. Interview Question
+// What is NaN 
+// If we minus two string then the outhput in NaN 
+// console.log("DITMS" - "Deogiri");
+// Output : NaN 
+
+// NaN is a property of global object, in other words, it is a variables in global scope. 
+// The initial value of NaN is not a number 
+
+// var myPhonenumber = 9876543210;
+// var myName = "Swapnil";
+// console.log(isNaN(myPhonenumber));
+// console.log(isNaN(myName));
+// Output : false 
+// Output : true 
+
+// if (isNaN(myName)) {
+//     console.log("Please enter the valid number");
+// }
+// Output : Please enter the valid number
+
+// 3. Challenge Time // NaN practice 
+// console.log(NaN === NaN);
+// Output : false
+
+// console.log(Number.NaN === NaN);
+// Output : false 
+
+// console.log(isNaN(Number.NaN));
+// Output : true 
+
+// console.log(Number.isNaN(NaN));
+// Output : true 
+
+
+//  * 🤗3rd Section Expression and Operators 
+// 1. Assignment operators 
+// 2. Arithematic 
+// 3. Comparison
+// 4. Logical 
+// 5. String 
+// 6. Consditional (ternary) operator 
+
+// Increment and decrement operator 
+
+// var num = 15;
+// var myNum = num++;
+// console.log(num);
+// console.log(myNum);
+// Output : 16 15 
+
+// console.log(num++ + 5);
+// console.log(myNum);
+// Output : 21 15 
+
+// Comparison operators 
+// A comparisom operator compares its operands and 
+// returns a logical value based on whether the comparison is true. 
+
+// var a = 30;
+// var b = 10;
+
+// Equal ( == ); 
+
+// console.log(a == b);
+// Output : false 
+
+
+// Not equal to ( != ); 
+// console.log(a != b);
+// Output : true 
+
+
+// Greater than ( > ); 
+// console.log(a > b);
+// Output : true 
+
+// Greater than equal to (>=); 
+// console.log(a >= b);
+// Output : true 
+
+// Less than (<); 
+// console.log(a < b);
+// Output : false
+
+// Less than or equal to (<=); 
+
+// Logical operators 
+// typically used with boolean (logical), 
+// var a = 30;
+// var b = -20;
+
+// Logical AND (&&)
+// the logical AND (&&), true if all the operands are true // very important 
+// console.log(a > b && b > 0); 
+// Output : true 
+
+// Logical OR operator ( || )
+
+// Logical NOT (!)
+// if we are getting true value then make it false, 
+// and if we getting false value then make it true 
+
+// console.log(!((a > 0) || (b < 0)));
+// Output : false 
+
+// console.log(!false);
+// Output : true 
+
+
+// String operators 
+// the concatenation operator (+) concatenates two string values together, 
+// returning another string that is the union of the two operand strings. 
+
+
+// console.log("Swapnil " + "Shelke");
+// Output : Swapnil Shelke 
+
+
+// * 4. Challenge time
+// 1. What will be output of 3**3; 
+// console.log(3 ** 3); // 3 * 3 * 3 
+// console.log(3 ** 5); // 3 * 3 * 3 * 3 * 3 * 3
+// Output : 27 
+// Output : 243
+
+// 2. console.log(9 ** 2);
+// Output : 91 
+
+// * this operator is known as exponential operator 
+// console.log(10 ** -1); // 1/10 
+
+// 3. Write a program to swap two numbers 
+// var a = 10;
+// var b = 5;
+
+// temp = a; // temp = 10; 
+// a = b; // a = 5; 
+// b = temp; // b = 10; 
+
+
+// console.log("valu of a is " + a);
+// console.log("valu of b is " + b);
+
+
+// 4. Write a program to swap numbers values without using third variables?
+// a = a + b; // a = 15; 
+// b = a - b; // b = 5; 
+// a = a - b; // a = 10; 
+
+// console.log("valu of a is " + a);
+// console.log("valu of b is " + b);
+
+// ! Interview Question 
+// 1. What is the differnence bewteen == and === ?
+// var num1 = 5;
+// var num2 = "5";
+
+// // console.log(typeof(num1));
+// // console.log(typeof(num2));
+// console.log(num1 == num2);
+// Output : true
+//? == only checks the value 
+
+// var num1 = 5;
+// var num2 = "5";
+
+// console.log(num1 === num2);
+// Output : false 
+//?  === checks value and data type as well 
+
+
+
+// * 4th section Control statement and Loops 
+// 1. if...else 
+//! Write a program to check given year is leap year not 
+// Leap are the years which are exactly divided by 4 ( such as 2016, 2020, 2024)
+
+// var year = 2021;
+// if (year % 4 == 0 ? console.log("This is leap year") : console.log("This is not leap year"));
+
+
+
+//! Js program to write tables 9th table 
+
+// for (var i = 0; i <= 10; i++) {
+
+//     console.log(9 * i);
+// }
+
+
+// * 5th section : Functions in JavaScript 
+// Function Def : Block of code, desugned to perform particular task. 
+// Before we use the function we need to define it. 
+// A function definition (also called a function declaration, or function statement)
+// consists of function keyword, followed by the name of function.
+
+// A list of parameters to the fnuction, enclosed in paranthesis and separated by commas.
+// 
+
+// function sum(a, b) {
+//     finalAns = a + b;
+//     console.log(finalAns);
+// }
+
+// sum(50, 100);
+// sum(100, 500);
+// sum(100, 1000);
+// Value inside this are argument
+
+//! What is differnence between function parameter and function function argument 
+//* Function parameter vs Function argument 
+//? Function parameter are the names listed in the function's definition
+//? Function argument are the real values passed to the function  
+
+
+//* Interview question 
+// Why function?
+// We can reuse code multiple times, after defining it once. 
+// We can call same code multiple times with different arguments to produce result. 
+
+// OR
+
+// DRY : Dont Repeat Yourself   
+
+// OR 
+
+// A function  is reusable code which we can call anywhere in our program, which eliminared 
+// to write same thing again and again
+
+// Function Expression 
+// Simply it means " Create a function and put it into the variables "
+
+// function sum(a, b) {
+//     finalAns = a + b;
+//     console.log(finalAns);
+// }
+
+// sum();
+
+
+// Time Stamp : 3:35:00
+//! Arrays Starts here //  Time Stamp : 4:19:51 
+//* Arrays in JS 6th section
+// When we use var, we can only store only one value at one tme. 
+// When we need to store multiple value that time simply we will use arrays 
+// In JS we have an Array Class and arrays are the protopype of this class 
+
+
 
 // To run js file type node script.js in terminal 
 ///////////////////////////////////////////////////////////////////////////////
@@ -130,7 +381,6 @@
 // let javascriptIsFun = true;
 // console.log(javascriptIsFun);
 ////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 /*// Lec : 34
 // Function declaration and Expression 
@@ -445,4 +695,22 @@ const output = arr.reduce(function(acc, curr) {
 
 console.log(output);
 
+<<<<<<< HEAD
 */
+
+// Lec No : 93 // Scoping in Practice 
+/*
+'use strict';
+
+function calcAge(birthYear) {
+    const age = 2037 - birthYear;
+    console.log(firstName);
+    return age;
+}
+
+const firstName = 'Jonas';
+calcAge(1991);
+*/
+
+// Remaining : Watch lec no 83 again 
+// Lec No : 96 // The this keyword
