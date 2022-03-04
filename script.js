@@ -27,7 +27,7 @@
 // var myName = "Swapnil";
 // console.log(myName);
 
-// var => key
+// var => key word 
 // myName => Variable name 
 // "Swapnil" => value of variable
 
@@ -270,8 +270,8 @@
 // var num1 = 5;
 // var num2 = "5";
 
-// // console.log(typeof(num1));
-// // console.log(typeof(num2));
+// console.log(typeof(num1));
+// console.log(typeof(num2));
 // console.log(num1 == num2);
 // Output : true
 //? == only checks the value 
@@ -361,9 +361,106 @@
 // In JS we have an Array Class and arrays are the protopype of this class 
 
 
+//* Array Substring 1 Traversal in array 
+// Navigate through an array 
+
+// let arr = ["swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC", "swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC", "swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC"]
+// console.log(arr[17]);
+// console.log(arr[arr.length - 1]);
+
+//! To check the length of an array 
+// console.log(arr.length);
+
+// let arr = ["swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC", "swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC", "swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC"]
+// for (var i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+
+// after update ES6 we have for..in and for..of loop too 
+// let arr = ["swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC", "swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC", "swapnil", "DITMS", "Deogiri", "random", "Pune", "ABC"]
+
+//? for in loop returns index values 
+// for (let elements in arr) {
+//     console.log(arr);
+// }
+
+//? for off loop gives us strings 
+
+// for (let elements of arr) {
+//     console.log(elements);
+// }
+
+
+//? for each loop 
+//? calls a function for each element in the array 
+
+// let arr = ["swapnil", "DITMS", "Deogiri"]
+
+//! We use forEach loop here
+// arr.forEach(function(element, index, array) {
+//     console.log(element + " index is :" + index + " " + array);
+// });
+
+//! forEach loop using fat arrow function
+// arr.forEach((element, index, array) => {
+//     console.log(element + " index is :" + index + " " + array);
+// });
+
+//* Array sunbestion 2 ✔ Searching and filter in an array 
+// Array.prototype.indexOf() 
+// Array.prototype.lastIndexOf() 
+// Array.prototype.includes()
+
+// find method  
+// find index method  
+
+
+// returns the first (least) index of an element within the array equal 
+// to an element, or -1 if none is found. It search the element from the 
+// 0th index number 
+//!!  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+
+// Filter method 
+// Sorting methods for array 
+// Array.sort() 
+
+//* Last index of method watch this on other youtube channel 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Time stamp : 4:46:09 Continue again from here 
+
+
+
 
 // To run js file type node script.js in terminal 
 ///////////////////////////////////////////////////////////////////////////////
+// This is from Udemy Which I dont understand 
 
 // let js = 'amazing';
 // if (js === 'amazing') alert('JS is fun');
