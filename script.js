@@ -428,32 +428,89 @@
 //* Last index of method watch this on other youtube channel 
 
 
+// Time : 5:25:11 for some time video was pause, I need to watch or read some methods again
+
+
+// Array.prototype.push() ✔✔✔
+// The push() method adds one or more elements to the 
+// end of an array and returns the mew length of the array. 
+
+// const animals = ['pigs', 'goat', 'tiger'];
+
+// const newAnimals = animals.push('swapnil');
+// console.log(newAnimals);
+// console.log(animals);
+
+// Output 
+// 4
+// [ 'pigs', 'goat', 'tiger', 'swapnil' ]
+
+
+// Array.prototype,unshipf(); ✔✔✔
+// The unshift method use to add one or more elements to start of the string 
+
+// const animals = ['pigs', 'goat', 'tiger'];
+
+// const newAnimals = animals.unshift('swapnil');
+// console.log(animals);
+// console.log(newAnimals);
+
+
+// Output
+// [ 'swapnil', 'pigs', 'goat', 'tiger' ]
+// 4
+
+// const numbers = ['1', '2', '3', '4'];
+
+// const newNum = numbers.push('5');
+// const newNum = numbers.unshift('0');
+
+// console.log(numbers);
+
+// Array.prototype.pop() ✔✔✔
+// The pop() method removes the last element from an array and returns that element. 
+// This method changes the length of the array. 
+
+// const plants = ['abc', 'def', 'ijk', 'lmn'];
+
+// const newPl = plants.pop();
+// console.log(plants);
+
+
+
+// Array.prototype.shift() 
+// The shift() method the first element from an array and returns 
+// that removed elements. This method changes the lenght of the array 
+
+// const numbBrs = ['1', '2', '3', '4'];
+
+// const newNum = numbBrs.shift();
+// console.log(numbBrs);
+// Output 
+// [ '2', '3', '4' ] 
+
+
+//! no:8  Challenge time
+
+// const months = ['Jan', 'march', 'April', 'June', 'July'];
+
+//1. Add Dec at the end of an array?
+//2. What is the return valus of splice method?
+//3. update march to March (update)?
+//4. Delete June from an array. 
+
+
+// Array.prototype.splice() ✔✔✔
+// Add or removes elements from an array. 
+
+// Sol 1: 
+const months = ['Jan', 'march', 'April', 'June', 'July'];
+const newMonth = months.splice(5, 0, "Dec");
+console.log(months);
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Time stamp : 4:46:09 Continue again from here 
 
 
 
@@ -664,9 +721,9 @@ console.log(now); // Reference Error
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 // Time : 10:42 AM 2/2/2022 
-//  Youtube : Namaste JavaScript // map, filter & reduce Functionns : Which are higher order functions 
-//  map function : Use to transform an array / Suppose we have an arrray here const arr = [5, 1, 3, 2, 6];
-//    const arr = [5, 1, 3, 2, 6];
+//!  Youtube : Namaste JavaScript // map, filter & reduce Functionns : Which are higher order functions 
+//?  map function : Use to transform an array / Suppose we have an arrray here const arr = [5, 1, 3, 2, 6];
+// const arr = [5, 1, 3, 2, 6, 9];
 // now we want to transform it // Means suppose we want to double or tripple the value // or convert it into binary 
 // here we use map function
 
@@ -675,13 +732,27 @@ console.log(now); // Reference Error
 //     return x * 2;
 // }
 
-// function tripple(x) {
+// const output = arr.map(double);
+// console.log(output);
+///////////////////////////////////////////////
+
+// function triple(x) {
 //     return x * 3;
 // }
+
+// const output = arr.map(triple);
+// console.log(output);
+
+
 
 // function binary(x) {
 //     return x.toString(2);
 // }
+
+// const output = arr.map(binary);
+// console.log(output);
+
+
 
 // const output = arr.map(binary); // We pass here double, thats why double  should be a function 
 // console.log(output);
@@ -691,13 +762,13 @@ console.log(now); // Reference Error
 // Now we want to triple the values // First create the function triple
 // function tripple(x) {
 //     return x * 3;
-//                               }
+// }
 
 
 //  For to convert binary 
 // function binary(x){
 //     return x.toString(2);
-//                              }
+//  }
 
 
 // We can also write our code like this 
@@ -705,12 +776,13 @@ console.log(now); // Reference Error
 // const output = arr.map(function binary(x) {
 //     return x.toString(2);
 // });
-// console.log(output);  // this syntax is totallly fine /// This is known as Highe rorder functions 
+// console.log(output);  // this syntax is totallly fine /// This is known as Highe order functions 
 /////////////////////////////////////////////////////////////////////////////
-//  Filter function //
+//?  Filter function 
 // const arr = [5, 1, 3, 2, 6];
 // filter odd values 
 //  This code is for finding odd values 
+
 // function isOdd(x) {
 //     return x % 2;
 // }
@@ -734,7 +806,7 @@ console.log(now); // Reference Error
 
 
 ////////////////////////////////////// Write this by myself //////////////////////////////////////
-// const arr = [2, 4, 5, 7, 8, 10, 500, 60, 67]
+// const arr = [2, 4, 5, 7, 8, 10, 500, 60, 67]; 
 
 // function isEven(x) {
 //     return x % 2 === 0; 
@@ -768,46 +840,7 @@ console.log(now); // Reference Error
 // console.log(output);
 
 
-// reduce function 
+//?  reduce function 
 // Time : 11:45 AM Date: 3/2/2022 // Youtube : Namaste Javascript 
 
-/*
-
-const arr = [5, 1, 3, 2, 6];
-sum or max
-function findSum(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) { // we can write this whole code with the help of reduce function 
-        sum = sum + arr[i];
-    }
-    return sum;
-}
-
-console.log(findSum(arr));
-/////////////////////////////////////////////////////////////////////////////
-const output = arr.reduce(function(acc, curr) {
-    acc = acc + curr;
-    return acc;
-}, 0);
-
-console.log(output);
-
-<<<<<<< HEAD
-*/
-
-// Lec No : 93 // Scoping in Practice 
-/*
-'use strict';
-
-function calcAge(birthYear) {
-    const age = 2037 - birthYear;
-    console.log(firstName);
-    return age;
-}
-
-const firstName = 'Jonas';
-calcAge(1991);
-*/
-
-// Remaining : Watch lec no 83 again 
-// Lec No : 96 // The this keyword
+// sum or max
