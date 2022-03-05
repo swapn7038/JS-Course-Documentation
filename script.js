@@ -504,11 +504,47 @@
 // Add or removes elements from an array. 
 
 // Sol 1: 
+// const months = ['Jan', 'march', 'April', 'June', 'July'];
+// const newMonth = months.splice(5, 0, "Dec");
+// console.log(months);
+
+// Sol 2 :
+// const months = ['Jan', 'march', 'April', 'June', 'July'];
+// const newMonth = months.splice(0, "Dec");
+// console.log(newMonth);
+// Output 
+// []
+
+
+// Sol 3 : 
+// const months = ['Jan', 'march', 'April', 'June', 'July'];
+
+// const newMonth = months.splice(1, 1, "March");
+// console.log(months);
+// 
+// output 
+// [ 'Jan', 'March', 'April', 'June', 'July' ]
+
+
+// Another way to solution 3 
+
+/* 
+
+need to watch this method again
+! 5:50:30 Continue from here
 const months = ['Jan', 'march', 'April', 'June', 'July'];
-const newMonth = months.splice(5, 0, "Dec");
-console.log(months);
 
+const indexOfMonth = months.indexOf('march');
 
+if (indexOfMonth == !-1) {
+    const updateMonth = months.splice(indexOfMonth, 1, 'March');
+    console.log(months);
+} else {
+    console.log('No such data found');
+}
+
+*/
+// Sol 4 also watch again5:5:54:30 
 
 
 
