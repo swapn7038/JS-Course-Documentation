@@ -547,6 +547,49 @@ if (indexOfMonth == !-1) {
 // Sol 4 also watch again5:5:54:30 
 
 
+//? map, reduce, filter method ✔✔✔
+// map, reduce, filter are Array methods, each one will iterate over an array
+// and perform transformationa or computation. 
+
+// https://www.freecodecamp.org/news/javascript-map-reduce-and-filter-explained-with-examples/
+//!  Array.prototype.map() 
+
+// const numbers = [1, 2, 3, 4];
+// const double = numbers.map(item => item * 2);
+// console.log(double);
+
+//? 11/3/22  10:38 AM 
+
+//! 11. Challenge Time 
+//? .1 Find the square root each element in an array?
+
+// let arr = [25, 36, 49, 64, 81];
+
+// let arrSqr = arr.map((curElem) => {
+//     return Math.sqrt(curElem);
+// })
+
+// console.log(arrSqr);
+
+
+//? Q.2 Multiply eqch element by 2 and return only those elements which are greater than 10? 
+
+// let arr = [2, 3, 4, 6, 8];
+
+// let arr2 = arr.map((curElem) => {
+//     return curElem * 2;
+// }).filter((curElem) => {
+//     return curElem > 10;
+// })
+
+// console.log(arr2);
+
+// we can also write this as 
+// let arr = [2, 3, 4, 6, 8];
+
+// let arr2 = arr.map((curElm) => curElm * 2).filter((curElem) => curElem > 10);
+// console.log(arr2);
+
 
 
 
